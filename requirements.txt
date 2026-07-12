@@ -1,0 +1,16 @@
+# Phase 2: data generation
+faker==30.8.2
+
+# Phase 3: Snowpipe Streaming (High-Performance Architecture)
+snowpipe-streaming          # official Python SDK: snowflake.ingest.streaming
+cryptography                # used by generate_keys.py to create the RSA key-pair
+
+# Phase 5: native ML (Model Registry + Experiment Tracking + Isolation Forest)
+snowflake-ml-python         # Model Registry, Experiment Tracking, native ML
+snowflake-snowpark-python   # native data access (pushdown)
+scikit-learn                # Isolation Forest (unsupervised anomaly detection)
+pandas
+numpy
+matplotlib                  # score-distribution plot (saved to file on CLI)
+numba                       # required alongside snowflake-ml-python
+tomli                       # TOML parsing for session creation (Python 3.10/3.11)

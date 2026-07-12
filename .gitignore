@@ -1,0 +1,15 @@
+# --- Secrets: NEVER commit private keys or profiles ---
+keys/
+*.p8
+profile.json
+*profile*.json
+
+# --- Python ---
+venv/
+__pycache__/
+*.pyc
+.env
+
+# --- Snowflake CLI deploy artifacts ---
+audit_app/output/
+output/
